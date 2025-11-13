@@ -23,7 +23,7 @@ It showcases my skills, projects, and contact information in a clean and modern 
 My-Portfolio/
 │── index.html
 │── images/
-    └──My photo.jpg
+    └──My-photo.jpg
 └── README.md
 
 ## How to Use
