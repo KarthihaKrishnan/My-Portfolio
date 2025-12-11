@@ -3,19 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karthiha Krishnan | Portfolio</title>
+    <title>Profile Card UI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, I'm Karthiha Krishnan</h1>
-    <p>I'm currently working as a tech support volunteer and learning front-end development with Code like a Girl and Odin Project</p>
-
-    <h2>About Me</h2>
-    <p>I enjoy helping people with technology, fixing mobile and software issues, and learning web development to build useful digital solutions.</p>
-
-    <h2>Contact</h2>
-    <ul>
-        <li>Email: karthiha.au@gmail.com</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/karthiha-krishnan" target="_blank">www.linkedin.com/in/karthiha-krishnan</a></li>
-    </ul>
+     <nav class="navbar">
+        <div class="nav-container">
+            <!-- 1) Logo -->
+            <div class="logo">Karthiha Krishnan</div>
+            <!-- 2) Navigation-->
+            <ul class="nav-links">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#about" class="active">ABOUT</a></li>
+                <li><a href="#skills" class="active">SKILLS</a></li>
+                <li><a href="projects.html" class="active">PROJECTS</a></li>
+                <li><a href="#contact" class="active">CONTACT</a></li>
+            </ul>
+            <!-- 3) Dark Mode Toggle-->
+            <div class="toggle">☾</div>
+        </div>
+    </nav>
+    <section id="home" class="section"></section>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+    <p>I am a developing full-stack developer learning HTML, CSS, JavaScript, React, and Node.js. 
+       I enjoy building small functional projects and improving my UI design skills.</p>
+    </section>
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+    <div class="skills-container">
+        <span class="skill-badge">HTML</span>
+        <span class="skill-badge">CSS</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">React</span>
+        <span class="skill-badge">Node.js</span>
+        <span class="skill-badge">GitHub</span>
+        <span class="skill-badge">Responsive Design</span>
+    </div>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: karthiha.au@gmail.com</p>
+        <p>GitHub: github.com/KarthihaKrishnan</p>
+    </section>
+    <div class="container">
+        <div class="card">
+            <h1>Card One</h1>
+            <img src="images/My photo.jpg" alt="My Photo">
+            <h3>Karthiha Krishnan</h3>
+            <p class="role">Full Stack Developer</p>
+            <p class="description">Learning and building real-world projects with HTML, CSS, JavaScript, React, and Node.Js. Focused on improving skills and creating simple, functional applications.</p>
+            <p class="extra-text">I love learning full-stack development and building projects.</p>
+            <button class="connect-btn">Connect</button>
+            <button class="show-btn">Show More</button>
+        </div>
+        <div class="card">
+            <h1>Card Two</h1>
+            <h3>Name: Karthiha Krishnan</h3>
+            <p class="role">Role: Full Stack Developer</p>
+            <p class="description">Growing as a developer by practicing UI design, layout techniques, and JavaScript fundamentals.</p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
 </body>
 </html>
