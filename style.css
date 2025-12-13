@@ -99,17 +99,32 @@ body.dark-mode {
     color: white;
 }
 
+body.dark-mode .nav-links {
+    background-color: #121212;
+}
+
+/* Dark Mode Hamburger */
+body.dark-mode .hamburger {
+    color: white;
+}
+
+body.dark-mode .nav-links li a {
+    color: white;
+}
+
+
 /* Dark Mode Navbar */
 .navbar.dark-mode {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #121212;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 .navbar.dark-mode .nav-links li a {
     color: white;
 }
 
-.navbar.darkmode .nav-links li a::after {
+.navbar.dark-mode .nav-links li a::after {
     background-color: white;
 }
 
@@ -129,6 +144,14 @@ body.dark-mode {
     background-color: #555;
 }
 
+.container.dark-mode .card h1 {
+    color: forestgreen;
+}
+
+.container.dark-mode .card .role {
+    color: darkgray;
+}
+
 /* Dark Mode Sections */
 .section.dark-mode h2,
 .section.dark-mode p {
@@ -139,18 +162,6 @@ body.dark-mode {
 .dark-mode .skill-badge {
     background-color: #333;
     color: white;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-        margin-bottom: 20px;
-    }
 }
 
 .navbar {
@@ -170,17 +181,29 @@ body.dark-mode {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
 
+/* Desktop default */
 .nav-links {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 25px;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 2000;
+    margin-right: 16px;
 }
 
 .nav-links li a {
@@ -197,14 +220,14 @@ body.dark-mode {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px;                    /* underline thickness */
-    background-color: black;        /* underline color */
-    transform: scaleX(0);           /* start hidden */
-    transform-origin: left;         /* animation starts from left */
+    height: 2px;                    
+    background-color: black;        
+    transform: scaleX(0);           
+    transform-origin: left;         
     transition: transform 0.3s ease, background-color 0.3s ease;}
 
 .nav-links li a:hover::after {
-    transform: scaleX(1);           /* animate to full width */
+    transform: scaleX(1);           
 }
 
 .nav-links li a.active::after {
@@ -248,5 +271,53 @@ html {
     font-size: 14px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Mobile: hidden by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        height: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        width: 200px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 0.4s ease;
+        z-index: 1100;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* When menu is open */
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        opacity: 1;
+        gap: 12px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+}
 
 

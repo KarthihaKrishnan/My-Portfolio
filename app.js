@@ -5,9 +5,10 @@ const darkToggle = document.querySelector(".toggle");
 const container = document.querySelector(".container");
 const body = document.body;
 const navbar = document.querySelector(".navbar");
-const sections = document.querySelector(".section");
+const sections = document.querySelectorAll(".section");
 const navlinks = document.querySelectorAll(".nav-links li a")
 const sectionAll = document.querySelectorAll(".section");
+const linksMenu = document.querySelector(".nav-links");
 
 function handleConnect () {
     myButton.textContent = "Connected ✔";
@@ -21,6 +22,10 @@ function toggleShowMore() {
     }else{
         showButton.textContent = "Show More";
     }
+}
+
+function toggleMenu () {
+    linksMenu.classList.toggle("open");
 }
 
 const sectionsArray = Array.from(sectionAll);
