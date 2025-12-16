@@ -25,12 +25,13 @@ It showcases my skills, projects, and contact information in a clean and modern 
 
 ## 📸 Screenshots
 ![Portfolio - Light Mode](images/light-mode.png)
+
 ![Portfolio - Dark Mode](images/dark-mode.png)
 
-![Desktop View](images/desktop.png)  
+![Desktop View](images/desktop-mode.png)  
 *Desktop view showing Skills section.*
 
-![Mobile View](images/mobile.png)  
+![Mobile View](images/mobile-mode.png)  
 *Mobile view showcasing responsive design.*
 
 
