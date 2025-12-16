@@ -9,6 +9,7 @@ const sections = document.querySelectorAll(".section");
 const navlinks = document.querySelectorAll(".nav-links li a")
 const sectionAll = document.querySelectorAll(".section");
 const linksMenu = document.querySelector(".nav-links");
+const menuIcon = document.querySelector(".hamburger");
 
 function handleConnect () {
     myButton.textContent = "Connected ✔";
@@ -26,6 +27,11 @@ function toggleShowMore() {
 
 function toggleMenu () {
     linksMenu.classList.toggle("open");
+    if(linksMenu.classList.contains("open")) {
+        menuIcon.textContent = "✕";
+    }else {
+        menuIcon.textContent = "☰";
+    }
 }
 
 const sectionsArray = Array.from(sectionAll);
