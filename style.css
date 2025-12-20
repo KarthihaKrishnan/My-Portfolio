@@ -308,14 +308,18 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    max-width: 2000px;
-    margin: auto;
-    padding: 60px 20px;
+    max-width: 3000px;
+    padding: 40px 20px;
 }
 
 .footer-about {
     flex: 1.5;
     text-align: left;
+    margin-left: 40px;
+}
+
+.footer-about h3 {
+    flex: 1;
 }
 
 .quick-links,
@@ -400,7 +404,7 @@ footer {
 }
 
 .footer-social {
-    padding: 80px 20px;
+    padding: 40x 20px;
     text-align: center;
 }
 
@@ -434,6 +438,11 @@ footer {
     font-size: 14px;
     color: #ccc
 }
+
+footer h2::after {
+  width: 32px;
+}
+
 
 @media (max-width: 768px) {
     .container {
@@ -484,13 +493,34 @@ footer {
     }
 
     .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        max-width: 100%;
+        padding: 24px 16px;
+    }
 
-  .footer-about {
-    text-align: center;
-  }
+    .footer-about {
+        text-align: center;
+    }
+
+    footer {
+        padding-bottom: 16px;
+        font-size: 0.95rem;
+    }
+
+    .footer-bottom,
+    .footer-container {
+        margin-bottom: 0;
+    }
+
+    footer h2 {
+        display: inline-block;
+    }
+
+    footer h2::after {
+    width: 32px;
+    }
 }
 
 
