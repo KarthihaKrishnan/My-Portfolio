@@ -8,6 +8,8 @@
     <meta name="description" content="Portfolio of Karthiha Krishnan, aspiring full-stack developer skilled in HTML, CSS, JavaScript, React, and Node.js." />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 </head>
 <body>
      <nav class="navbar">
@@ -130,46 +132,70 @@
 
     <footer>
         <div class="footer-container">
-            <!-- About-->
-             <div class="footer-about">
-                <h3>Karthiha Krishnan</h3>
-                <p>Aspiring full-stack developer building clean, responsive web interfaces while learning modern JavaScript and React.</p>
-             </div>
-            <!-- Quick Links -->
-             <div class="quick-links">
-                <h2>Quick Links</h2>
-                <ul class="footQuick-links">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-             </div>
-             <!-- Skills -->
-             <div class="skills">
-                <h2>Skills</h2>
-                <ul class="footSkills-links">
-                    <li><a href="#html&css" class="active">HTML & CSS</a></li>
-                    <li><a href="#javascript" class="active">JavaScript</a></li>
-                    <li><a href="#react" class="active">React (learning)</a></li>
-                    <li><a href="node.js" class="active">Node.js (learning)</a></li>
-                    <li><a href="#responsivedesign" class="active">Responsive Design</a></li>
-                </ul>
-             </div>
+            <section id="about" class="about">
+                <!-- About-->
+                <div class="footer-about">
+                    <h3>Karthiha Krishnan</h3>
+                    <p>Aspiring full-stack developer focused on buildingclean, responsive web interfaces while learning modern JavaScript and React.</p>
+                </div>
+            </section>
+            
+            <section id="quick-links" class="quick-links">
+                <!-- Quick Links -->
+                <div class="footerQuick-links">
+                    <h2>Quick Links</h2>
+                    <ul class="listQuick-links">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="skills" class="skills">
+                <!-- Skills -->
+                <div class="footerskills-container">
+                    <h2>Skills</h2>
+                    <ul class="footSkills-links">
+                        <li><a href="#html&css">HTML & CSS</a></li>
+                        <li><a href="#javascript">JavaScript</a></li>
+                        <li><a href="#react">React (learning)</a></li>
+                        <li><a href="#nodejs">Node.js (learning)</a></li>
+                        <li><a href="#responsivedesign">Responsive Design</a></li>
+                    </ul>
+                </div>
+            </section>
+             
             <!-- Social Links -->
-            <div class="footer-social">
-                <h4>Connect with me</h4>
-                <p>Email: <a href="mailto:karthiha.au@gmail.com">karthiha.au@gmail.com</a></p>
-                <a href="https://github.com/KarthihaKrishnan" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/karthiha-krishnan" target="_blank">LinkedIn</a>
-            </div>
+            <section id="footer-social" class="footer-social">
+                <h2 class="section-title">Connect with me</h2>
+                <div class="footerContact-container">
+                    <!-- Email -->
+                    <a href="mailto:karthiha.au@gmail.com" class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/KarthihaKrishnan" target="_blank" class="contact-item">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/karthiha-krishnan" target="_blank" class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </section>
         </div>
 
-        <!-- Copyright -->
-        <div class="footer-bottom">
-            <p>© 2025 Karthiha Krishnan. Built with care and curiosity.</p>
-        </div>
+        <section id="footer-bottom" class="footer-bottom" aria-label="Footer Bottom">
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>© <span id="year"></span> | Made with ❤️ by Karthiha Krishnan. Built with care and curiosity.</p>
+            </div>
+        </section>
     </footer>
     
     <script src="app.js"></script>

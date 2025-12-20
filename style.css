@@ -1,6 +1,7 @@
 body {
     background-color: rgb(241, 235, 235);
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
 }
 
 .container {
@@ -180,11 +181,12 @@ body.dark-mode .nav-links li a {
 .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
-    max-width: 1000px;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 2000px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 /* Desktop default */
@@ -296,6 +298,143 @@ html {
     margin-bottom: 8px;
 }
 
+footer {
+  background-color: #24262b;
+  color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 2000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.footer-about {
+    flex: 1.5;
+    text-align: left;
+}
+
+.quick-links,
+.skills,
+.footer-social {
+  flex: 1;
+}
+
+.about h3 {
+    position: relative;
+    display: inline-block;
+}
+
+.about h3::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color: white;
+    margin-top: 6px;
+}
+
+.footer-container h2::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color: white;
+    margin-top: 6px;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color: white;
+    margin-top: 6px;
+}
+
+.listQuick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listQuick-links li {
+    margin-bottom: 8px;
+}
+
+.listQuick-links li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.listQuick-links a:hover {
+  color: #4caf50;
+}
+
+.footSkills-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footSkills-links li {
+    margin-bottom: 8px;
+}
+
+.footSkills-links a:hover {
+    color: #4caf50;
+}
+
+.footSkills-links li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-social {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.footerContact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item i {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #ccc
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -343,6 +482,15 @@ html {
     .hamburger {
         display: block;
     }
+
+    .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-about {
+    text-align: center;
+  }
 }
 
 

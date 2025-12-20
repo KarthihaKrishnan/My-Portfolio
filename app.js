@@ -67,3 +67,4 @@ darkToggle.addEventListener("click", () => {
 
 myButton.addEventListener("click", handleConnect);
 showButton.addEventListener("click", toggleShowMore);
+document.getElementById('year').textContent = new Date().getFullYear();
