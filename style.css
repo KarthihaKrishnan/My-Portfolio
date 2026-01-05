@@ -167,7 +167,8 @@ body.dark-mode .nav-links li a {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -200,12 +201,21 @@ body.dark-mode .nav-links li a {
     padding: 0;
 }
 
+.nav-links a {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
 .hamburger {
     display: none;
+    align-items: center;
+    line-height: 1;
     font-size: 26px;
     cursor: pointer;
     z-index: 2000;
     margin-right: 16px;
+    padding: 0;
 }
 
 .nav-links li a {
@@ -239,6 +249,12 @@ body.dark-mode .nav-links li a {
 .logo {
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo h1 {
+  margin: 0;
 }
 
 html {
@@ -328,18 +344,14 @@ footer {
   flex: 1;
 }
 
-.about h3 {
+#about h2 {
     position: relative;
     display: inline-block;
 }
 
-.about h3::after {
-    content: "";
-    display: block;
-    width: 40%;
-    height: 3px;
-    background-color: white;
-    margin-top: 6px;
+#about p {
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .footer-container h2::after {
@@ -442,7 +454,23 @@ footer {
 footer h2::after {
   width: 32px;
 }
+.project-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 
+.project-links i {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+.projects-group ul li {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
 
 @media (max-width: 768px) {
     .container {
@@ -519,7 +547,7 @@ footer h2::after {
     }
 
     footer h2::after {
-    width: 32px;
+        width: 32px;
     }
 }
 
